@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(lidar_align)
 
+set (CMAKE_PREFIX_PATH "/usr/local/lib/cmake/nlopt")
+set(CMAKE_CXX_STANDARD 14)
+
+
 add_definitions(-std=c++11 -ofast)
 
 find_package(catkin REQUIRED COMPONENTS
